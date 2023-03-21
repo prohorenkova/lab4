@@ -1,14 +1,14 @@
-ticket = input('Введите номер билета: ')
+t = input('Введите номер билета: ')
 x = 0
 y = 0
-if len(ticket) % 2 == 0:
-    for i in ticket[0:int(len(ticket) / 2)]:
+if len(t) % 2 == 0:
+    for i in t[0:int(len(t) / 2)]:
         x = x + int(i)
-    for i in ticket[int(len(ticket) / 2):int(len(ticket)) + 1]:
+    for i in t[int(len(t) / 2):int(len(t)) + 1]:
         y = y + int(i)
     if x == y:
-        print('Билет счастливый!')
+        print('Билет счастливый')
     else:
-        print('Билет не является счастливым!')
+        print('Билет не является счастливым')
 else:
-    print('Количество цифр нечётно!')
+    print('Количество цифр нечётно')
